@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Young+Serif&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+    <title>Courses</title>
+</head>
+
+<body>
+    <section class="course-header">
+
+        <nav>
+            <a href="main.html"><img src="MRLOGO1.png" alt=""></a>
+            <div class="nav-link" id="navLink">
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="main.html">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="Courses.html">COURSES</a></li>
+                    <li><a href="job.html">JOB</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <button id="logoutButton" class="btn btn-danger mt">Login Page</button>
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Courses Offered By Us</h1>
+        </div>
+    </section>
+    <section class="course">
+        <h1>Courses We Offer</h1>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum nihil totam repellendus nostrum doloremque
+            corrupti quae consectetur quas quidem aliquam, modi expedita nobis neque repellat, accusantium error optio?
+            Commodi, delectus!</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Data Science, AI, Machine Learning with Python </h3>
+                <p>Use Coupon : DS_ML_PYTHON_UPLATZ3</p>
+                <a href="https://www.udemy.com/course/data-science-artificial-intelligence-machine-learning-with-python/?ranMID=39197&ranEAID=KLBDeI3Y*Vs&ranSiteID=KLBDeI3Y.Vs-VDaRsTV.nDxRopgVhkeu_Q&LSNPUBID=KLBDeI3Y*Vs&utm_source=aff-campaign&utm_medium=udemyads&couponCode=ST16MT70224"><button class="btn">CourseLink</button></a>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nihil quod nam consequatur culpa
+                    ipsam soluta, hic veniam impedit odit, corrupti quibusdam aliquid possimus sapiente placeat debitis.
+                    Ad quasi nostrum, corrupti quo optio tempora!</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nihil quod nam consequatur culpa
+                    ipsam soluta, hic veniam impedit odit, corrupti quibusdam aliquid possimus sapiente placeat debitis.
+                    Ad quasi nostrum, corrupti quo optio tempora!</p>
+            </div>
+
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nihil quod nam consequatur culpa
+                    ipsam soluta, hic veniam impedit odit, corrupti quibusdam aliquid possimus sapiente placeat debitis.
+                    Ad quasi nostrum, corrupti quo optio tempora!</p>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <script>
+        document.getElementById('logoutButton').addEventListener('click', () => {
+            document.cookie = 'token=; Max-Age=0; path=/';
+            window.location.href = '/';
+        });
+    </script>
+
+    <script>
+        var navLink = document.getElementById("navLink");
+        function showMenu() {
+            navLink.style.right = "0";
+        }
+        function hideMenu() {
+            navLink.style.right = "-200px";
+        }
+
+    </script>
+</body>
+
+</html>
