@@ -51,16 +51,16 @@
 <script>
   const notificationbtn = document.getElementById("notification-btn");
   notificationbtn.addEventListener("click", () => {
-    Notification.requestPermission().then((Permission) => {
-      if (Permission === "granted") {
+    // Notification.requestPermission().then((Permission) => {
+      // if (Permission === "granted") {
         const user = document.getElementById("user").value;
-        new Notification("Manav Rachna", {
+        new Notification("Manav Rachna International Institute Of Research & Studies", {
           body: "Welcome " + user,
-          body: "Good to see you!!",
+          body: "Hello Good to see you!!",
           });
-        }
+        // }
     });
-    });
+    // });
 </script>
 
 <script>
