@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Contact</title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.">-->
+
+    <style>
+        body {
+            background-color: #f2f2f2;
+        }
+        form input , textarea{
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border-radius: 10px;
+            background-color: #000000;
+        }
+        .emailform{
+            text-align: center;
+            align-items: center;
+        }
+        #btn{
+            background-color: #051011;
+        }
+    </style>
+</head>
+<body>
+    <div class="emailform">
+        <h1>Emergency Contact</h1>
+<h3>It can take 40 to 60 seconds please wait a while!!</h3>
+<h3>We will contact you ASAP!!</h3>
+    <form action="https://formsubmit.co/parth02122004@gmail.com" method="POST">
+        <input type="text" name="name" required placeholder="Enter your Name">
+        <input type="email" name="email" required placeholder="Enter your Email">
+        <input type="tel" name="phone" required placeholder="Enter you Phone Number">
+        <input type="text" name="subject" required placeholder="Enter subject">
+        <textarea name="msg" cols="30" rows="10" required placeholder="Enter your Message" ></textarea>
+
+
+        <input type="hidden" name="_autoresponse" value="We will contact you ASAP">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+
+        <input id="btn" type="submit" value="submit">
+        <!-- <button type="submit">Send</button> -->
+   </form>
+   </div>
+</body>
+</html>
