@@ -12,10 +12,10 @@
   <div class="container text-center">
     <h1 class="alert alert-warning mt-2">MRIIRS Contact Logger</h1>
     <form action="/home" method="post" enctype="multipart/form-data">
-      <input placeholder="Enter Email" name="user_email" class="form-control mt-2" required>
-      <input placeholder="Enter Name" name="user_name" class="form-control mt-2" required>
-      <input placeholder="Enter Phone Number" name="user_location" class="form-control mt-2" required>
-      <input placeholder="Enter Message" name="user_message" class="form-control mt-2" required>
+      <input type="email" placeholder="Enter Email" name="user_email" class="form-control mt-2" required>
+      <input type="text" placeholder="Enter Name" name="user_name" class="form-control mt-2" required>
+      <input type="tel" placeholder="Enter Phone Number" name="user_location" class="form-control mt-2" required>
+      <input type="text" placeholder="Enter Message" name="user_message" class="form-control mt-2" required>
       <input type="file" class="form-control mt-2" name="uploaded_file">
       <button class="btn btn-warning mt-2">Submit</button>
     </form>

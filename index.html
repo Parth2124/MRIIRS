@@ -39,9 +39,9 @@
   <form action="/login" method="post" onsubmit="return validateLoginForm(event)">
     <div class="mb-3">
     <!-- <label for="user">Email-ID:</label><br> -->
-    <input class="form-control mt-2"  type="text" id="user" name="user" placeholder="Enter your Email-ID">
+    <input class="form-control mt-2"  type="email" id="user" name="user" placeholder="Enter your Email-ID" required>
     <!-- <label for="password">Password:</label> -->
-    <input class="form-control mt-2" type="password" id="password" name="password" placeholder="Enter your Password">
+    <input class="form-control mt-2" type="password" id="password" name="password" placeholder="Enter your Password" required>
     <button class="btn btn-primary mt-4" type="submit" id="notification-btn" >Login</button>
     <!-- <button id="notification-btn"> send Notification</button> -->
   </div>
