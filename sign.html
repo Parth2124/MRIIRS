@@ -19,9 +19,9 @@
         <h1 class="alert alert-primary">Signup</h1> 
         <form name="signupForm" action="/sign" method="post"  onsubmit="return validateSignUpForm(event)">
         <div class="mb-3">
-            <input type="text" class="form-control mt-2"  name ='user'placeholder="Enter Email" id='username'></input>
+            <input type="email" class="form-control mt-2"  name ='user'placeholder="Enter Email" id='username' required>
             
-            <input type="password" class="form-control mt-2" type ="password" name = 'Password'placeholder="Enter Password" id="Password">
+            <input type="password" class="form-control mt-2" type ="password" name = 'Password'placeholder="Enter Password" id="Password" required>
             <!-- <i class="fa-regular fa-eye"></i></input> -->
             <button class="btn btn-primary mt-4"  type="submit">Signup</button>
         </div>
